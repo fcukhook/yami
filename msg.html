@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Message Page</title>
+    <title>Mag Page</title>
     <style>
         body {
             margin: 0;
@@ -12,38 +12,43 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(to right, lightgreen, #FFA500); /* Using hex code for orange */
+            background: linear-gradient(to right, lightblue, lightgreen); /* Gradient background */
             color: black;
             font-family: Arial, sans-serif;
             font-size: 24px;
             font-weight: bold;
             text-align: center;
         }
-        .button-container {
-            position: absolute;
-            bottom: 20px; /* Adjust this value to move the button higher or lower */
+
+        .content {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px; /* Add some spacing at the bottom */
         }
-        button {
+
+        .next-button {
             padding: 10px 20px;
             font-size: 18px;
-            background-color: black;
+            background-color: #4CAF50; /* Green background */
             color: white;
             border: none;
-            cursor: pointer;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            cursor: pointer;
+            position: absolute; /* Position the button at the bottom */
+            bottom: 20px; /* Adjust this value to move the button up or down */
         }
-        button:hover {
-            background-color: gray;
+
+        .next-button:hover {
+            background-color: #45a049; /* Darker green on hover */
         }
     </style>
 </head>
 <body>
-    <div>
-        <p>hey yami... hmm i too have love on you but .. express cheyanu, ofc nen niku inthavaraku em gift or surprise iyyaledhu , but.. ye sari chinna surprise..!</p>
+    <div class="content">
+        <p>hope you are not crying..😉,nak edina baga impact padte first share chesedi nike.. and you too can.. ofc nen solution iche antah pedodini kadhu but.. you can share..</p>
     </div>
-    <div class="button-container">
-        <button onclick="window.location.href='mag.html'">Next</button>
-    </div>
+    <button class="next-button" onclick="window.location.href='eng.html'">Next</button>
 </body>
 </html>
